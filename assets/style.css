@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.left-side {
+    width: 20%;
+    border: 1px solid lightgray;
+}
+
+.right-side {
+    width: 80%;
+}
+
+.left-side .left-side-top{
+    padding: 15px;
+    background-color: midnightblue;
+}
+
+.left-side .left-side-top .logo-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-side .left-side-top .logo-profile .gitlab-icon i {
+    font-size: 30px;
+    color: coral;
+}
+
+.left-side .left-side-top .logo-profile .profile-img {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-side .left-side-top .logo-profile .profile-img i {
+    color: white;
+    font-size: 20px;
+}
+
+.left-side .left-side-top .logo-profile .profile-img img {
+    width: 35px;
+    border-radius: 50%;
+}
