@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+.main-container {
+    display: flex;
+}
+
 .left-side {
     width: 20%;
     border: 1px solid lightgray;
@@ -95,6 +99,13 @@
     font-size: 20px;
 }
 
+.left-side .left-side-bottom .project-name i {
+    background-color: burlywood;
+    padding: 5px;
+    border-radius: 5px;
+    width: auto;
+}
+
 .left-side .left-side-bottom .project-name:hover {
     background-color: #8080805c;
     padding: 5px;
@@ -133,11 +144,11 @@
     font-size: 16px;
 }
 
-.left-side-hr{
+.left-side-hr {
     padding: 10px 15px;
 }
 
-hr{
+hr {
     margin: 0px;
     padding: 0px;
 }
@@ -148,4 +159,187 @@ hr{
 
 .left-side-footer div {
     font-size: 20px;
+}
+
+.right-side header {
+    background-color: whitesmoke;
+    padding: 20px 30px;
+    border-bottom: 1px solid lightgray;
+    font-weight: 500;
+}
+
+.right-side .right-container {
+    padding: 25px 35px;
+    display: flex;
+}
+
+.right-side-left {
+    width: 75%;
+}
+
+.right-side-left .right-side-left-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.right-side-left .title-project {
+    margin: 0;
+    padding: 0;
+}
+
+.right-side-left .title-project i {
+    background-color: burlywood;
+    padding: 10px 14px;
+    border-radius: 5px;
+    width: auto;
+}
+
+.right-side-left .lock {
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+.right-side-left .free {
+    background-color: #c440c470;
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #a814a8;
+}
+
+.right-side-left .center-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.right-side-left .center-menu .left-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.right-side .border-background-span {
+    border: 1px solid lightgray;
+    padding: 8px 15px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.right-side-left .center-menu .left-menu h6 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.right-side-left .center-menu .right-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.right-side-left .merge-details {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.right-side-left .merge-details img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.right-side-left .merge-details .branch-author {
+    display: flex;
+    align-items: center;
+}
+
+.right-side-left .merge-details .branch-author span {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side-left .merge-details .merge-id {
+    display: flex;
+    align-items: center;
+}
+
+.right-side-left .merge-details .merge-id span {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.right-side-left .merge-details .merge-id i {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    font-size: 23px;
+    padding: 10px 15px;
+    border-left: none;
+}
+
+.right-side-left .project-data {
+    padding: 0;
+    background-color: white;
+}
+
+.table {
+    width: 100%;
+    --bs-table-bg: none !important;
+    margin-bottom: 0px !important;
+    border-radius: 5px;
+}
+
+.table .last-update {
+    text-align: end;
+}
+
+.table th, .table td {
+    padding: 10px 20px !important;
+}
+
+.right-side-right {
+    width: 25%;
+}
+
+.right-side-right .top-header {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-side-right .top-header .star {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding: 10px;
+}
+
+.right-side-right .top-header .zero {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    padding: 10px 15px;
+    border-left: none;
+}
+
+.right-side-right .right-right-container {
+    padding: 40px;
+    padding-right: 0;
+}
+
+.right-side-right .right-right-container h5 {
+    margin-bottom: 10px;
+}
+
+.right-right-container .line-colored {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #a814a8;
+    border: none
 }
