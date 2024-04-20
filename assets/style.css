@@ -290,20 +290,30 @@ hr {
     background-color: white;
 }
 
-.table {
+/*-------------table control css--------------*/
+
+.git-table {
     width: 100%;
-    --bs-table-bg: none !important;
-    margin-bottom: 0px !important;
     border-radius: 5px;
+    table-layout: fixed;
+    overflow: unset;
+    border: 1px solid lightgrey;
 }
 
-.table .last-update {
+.git-table .last-update {
     text-align: end;
 }
 
-.table th, .table td {
+.git-table th, .git-table td {
     padding: 10px 20px !important;
+    border-bottom: 2px solid lightgray;
 }
+
+.git-table tr .border-bottom-none {
+    border-bottom: none;
+}
+
+/*---------------------table control css end----------- */
 
 .right-side-right {
     width: 25%;
@@ -311,8 +321,8 @@ hr {
 
 .right-side-right .top-header {
     display: flex;
-  justify-content: space-between;
-  align-items: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .right-side-right .top-header .star {
@@ -344,3 +354,5 @@ hr {
     background-color: #a814a8;
     border: none
 }
+
+
