@@ -57,6 +57,7 @@
 .left-side .left-side-top .top-middle {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .left-side .left-side-top .top-middle .middle {
@@ -163,10 +164,19 @@ hr {
 }
 
 .right-side header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     background-color: whitesmoke;
     padding: 20px 30px;
     border-bottom: 1px solid lightgray;
     font-weight: 500;
+}
+
+.right-side header i {
+    margin-right: 8px;
+    font-size: 16px;
+    display: none;
 }
 
 .right-side .right-container {
@@ -181,9 +191,6 @@ hr {
 
 .right-side .main-title {
     padding: 30px 35px 5px;
-}
-
-.right-side .main-title {
     display: flex;
     align-items: center;
 }
@@ -224,6 +231,8 @@ hr {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .right-side-left .center-menu .left-menu {
@@ -250,6 +259,7 @@ hr {
     display: flex;
     align-items: center;
     gap: 15px;
+    text-wrap: nowrap;
 }
 
 .right-side-left .merge-details {
@@ -290,7 +300,7 @@ hr {
 .right-side-left .merge-details .merge-id i {
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
-    font-size: 23px;
+    font-size: 20px;
     padding: 10px 15px;
     border-left: none;
 }
@@ -333,13 +343,16 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
+    flex-wrap: wrap;
+    width: 25%;
 }
 
 .main-title .top-header .star {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     padding: 8px;
+    text-wrap: nowrap;
 }
 
 .main-title .top-header .zero {
@@ -406,9 +419,17 @@ hr {
     display: none;
 }
 
+.download-copy-ssh {
+    display: none;
+}
+
+.last-commit {
+
+}
+
 
 /* Media query for small screens */
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 470px) {
     .left-side {
         display: none;
     }
@@ -515,15 +536,16 @@ hr {
         width: 100%;
         justify-content: space-between;
         margin-bottom: 15px;
+        flex-wrap: wrap;
     }
 
     .right-side-left .center-menu .right-menu {
         flex-direction: column;
-            width: 100%;
+        width: 100%;
     }
 
-    .right-side-left .center-menu .right-menu  span{
-            width: 100%;
+    .right-side-left .center-menu .right-menu span {
+        width: 100%;
         /*text-align: center;*/
     }
 
@@ -535,6 +557,90 @@ hr {
         display: flex;
         align-items: center;
     }
+
+    .right-side-left .merge-details {
+        display: none;
+    }
+
+    .download-copy-ssh {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;
+        text-wrap: nowrap;
+    }
+
+    .last-commit {
+        display: none;
+    }
+
+    .right-side header i {
+        display: block;
+    }
+
+    .border-background-span {
+        padding: 6px !important;
+        font-size: 13px !important;
+    }
+
+    .main-title .top-header {
+        flex-wrap: nowrap;
+    }
+
+    .main-title .top-header .notification {
+        padding: 9px 6px !important;
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (min-width: 471px) and (max-width: 1024px) {
+    .left-side {
+        display: none;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .right-side .right-container {
+        padding: 15px; !important;    }
+
+    .border-background-span {
+        padding: 6px !important;
+        font-size: 13px !important;
+    }
+
+    .right-side header i {
+        display: block;
+    }
+
+    .right-side-right .right-right-container {
+        padding: 15px;
+        padding-right: 0 !important;
+        font-size: 14px;
+    }
+
+    .main-title .top-header {
+        gap: 6px;
+    }
+
+    .main-title .top-header .notification {
+        padding: 9px 6px !important;
+        font-size: 14px !important;
+    }
+
+    .main-title .right-side-left-header .title-project{
+        font-size: 20px;
+    }
+
+    .merge-details .merge-id i {
+        font-size: 19px !important;
+    }
+
+    .right-side .main-title {
+  padding: 15px 15px 5px;
+}
+
 }
 
 
