@@ -64,10 +64,10 @@
     color: white;
     border: 1px solid gray;
     background-color: #8080805c;
-    padding: 8px 30px;
+    padding: 8px 20px;
     border-radius: 5px;
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -75,9 +75,9 @@
     color: white;
     border: 1px solid gray;
     background-color: #8080805c;
-    padding: 8px 30px;
+    padding: 8px 20px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
     font-weight: 500;
 }
@@ -92,13 +92,14 @@
 
 .left-side .left-side-bottom .project {
     padding: 0 15px;
+    font-size: 15px;
 }
 
 .left-side .left-side-bottom .project-name {
     display: flex;
     align-items: center;
     padding: 5px 15px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .left-side .left-side-bottom .project-name i {
@@ -108,31 +109,31 @@
     width: auto;
 }
 
-.left-side .left-side-bottom .project-name:hover {
-    background-color: #8080805c;
-    padding: 5px;
-    border-radius: 5px;
-}
+/*.left-side .left-side-bottom .project-name:hover {*/
+/*    background-color: #8080805c;*/
+/*    padding: 5px;*/
+/*    border-radius: 5px;*/
+/*}*/
 
 .left-side .left-side-bottom .project-name span {
     display: none;
 }
 
-.left-side .left-side-bottom .project-name:hover span {
-    display: block;
-    margin-right: 5px;
-    border-radius: 5px;
-    width: 5px;
-    height: 30px;
-    background-color: black;
-}
+/*.left-side .left-side-bottom .project-name:hover span {*/
+/*    display: block;*/
+/*    margin-right: 5px;*/
+/*    border-radius: 5px;*/
+/*    width: 5px;*/
+/*    height: 30px;*/
+/*    background-color: black;*/
+/*}*/
 
 .left-side .left-side-bottom .pinned {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .left-side .left-side-bottom .issues {
@@ -141,9 +142,9 @@
 
 .left-side .left-side-bottom .issues .zero {
     background-color: gray;
-    padding: 0px 10px;
+    padding: 0px 8px;
     border-radius: 45%;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .left-side-hr {
@@ -160,7 +161,7 @@ hr {
 }
 
 .left-side-footer div {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .right-side header {
@@ -168,14 +169,15 @@ hr {
     align-items: center;
     gap: 6px;
     background-color: whitesmoke;
-    padding: 20px 30px;
+    padding: 10px 30px;
     border-bottom: 1px solid lightgray;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .right-side header i {
     margin-right: 8px;
-    font-size: 16px;
+    /*font-size: 16px;*/
     display: none;
 }
 
@@ -204,6 +206,7 @@ hr {
 .title-project {
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 
 .title-project i {
@@ -214,7 +217,6 @@ hr {
 }
 
 .right-side-left-header .lock {
-    font-size: 20px;
     margin-right: 1rem;
 }
 
@@ -224,6 +226,7 @@ hr {
     border-radius: 50px;
     font-weight: 500;
     color: #a814a8;
+    font-size: 12px;
 }
 
 .right-side-left .center-menu {
@@ -244,9 +247,10 @@ hr {
 
 .right-side .border-background-span {
     border: 1px solid lightgray;
-    padding: 8px 15px;
+    padding: 2px 6px;
     background-color: whitesmoke;
     border-radius: 5px;
+    font-size: 14px;
 }
 
 .right-side-left .center-menu .left-menu h6 {
@@ -263,7 +267,7 @@ hr {
 }
 
 .right-side-left .merge-details {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -285,6 +289,7 @@ hr {
 .right-side-left .merge-details .branch-author span {
     display: flex;
     flex-direction: column;
+    font-size: 13px;
 }
 
 .right-side-left .merge-details .merge-id {
@@ -297,11 +302,11 @@ hr {
     border-top-right-radius: 0;
 }
 
-.right-side-left .merge-details .merge-id i {
+.right-side-left .merge-details .merge-id .clone {
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
-    font-size: 20px;
-    padding: 10px 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
     border-left: none;
 }
 
@@ -351,14 +356,12 @@ hr {
 .main-title .top-header .star {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    padding: 8px;
     text-wrap: nowrap;
 }
 
 .main-title .top-header .zero {
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
-    padding: 8px 15px;
     border-left: none;
 }
 
@@ -369,11 +372,12 @@ hr {
 
 .right-side-right .right-right-container h5 {
     margin-bottom: 10px;
+    font-size: 14px
 }
 
 .right-right-container .line-colored {
     width: 100%;
-    height: 10px;
+    height: 6px;
     border-radius: 5px;
     background-color: #a814a8;
     border: none
@@ -385,8 +389,7 @@ hr {
 }
 
 .notification {
-    font-size: 18px;
-    padding: 11px 15px !important;
+    padding: 5px 8px !important;
 }
 
 .main-title .more-actions-select {
@@ -402,7 +405,7 @@ hr {
 }
 
 .all-info {
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
 }
 
 .all-info i {
@@ -413,10 +416,13 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
 .right-right-container .create-on span {
     display: none;
+    font-size: 14px;
 }
 
 .download-copy-ssh {
@@ -425,6 +431,14 @@ hr {
 
 .last-commit {
 
+}
+
+.commit-branch-tags-mib {
+    font-size: 13px;
+}
+
+.right-right-container hr {
+    margin-top: 0;
 }
 
 
@@ -451,12 +465,13 @@ hr {
     }
 
     .right-side .main-title .right-side-left-header h1 {
-        font-size: 20px;
+        font-size: 16px;
+        text-wrap: nowrap;
     }
 
     .right-side header {
         font-size: 14px;
-        padding: 12px 20px;
+        padding: 10px 15px;
     }
 
     .main-title .top-header .star {
@@ -487,13 +502,14 @@ hr {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
+        margin-bottom: 15px;
     }
 
     .all-info {
         text-wrap: nowrap;
         margin-right: 9px;
         margin-bottom: 0;
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .all-info i {
@@ -505,14 +521,17 @@ hr {
         flex-wrap: wrap;
         gap: 5px;
         flex-direction: row;
+        font-size: 12px;
     }
 
     .right-right-container .create-on {
         margin-bottom: 10px;
+        font-size: 13px;
     }
 
     .right-right-container .create-on span {
         display: block;
+        font-size: 12px;
     }
 
     .right-side-left {
@@ -537,6 +556,7 @@ hr {
         justify-content: space-between;
         margin-bottom: 15px;
         flex-wrap: wrap;
+        font-size: 13px;
     }
 
     .right-side-left .center-menu .right-menu {
@@ -591,9 +611,13 @@ hr {
         padding: 9px 6px !important;
         font-size: 14px !important;
     }
+
+    .git-table th, .git-table td {
+        padding: 10px 10px !important;
+    }
 }
 
-@media only screen and (min-width: 471px) and (max-width: 1024px) {
+@media only screen and (min-width: 471px) and (max-width: 950px) {
     .left-side {
         display: none;
     }
@@ -603,7 +627,10 @@ hr {
     }
 
     .right-side .right-container {
-        padding: 15px; !important;    }
+        padding: 15px;
+    !important;
+        flex-direction: column-reverse;
+    }
 
     .border-background-span {
         padding: 6px !important;
@@ -614,14 +641,19 @@ hr {
         display: block;
     }
 
+    .right-side-right {
+        width: 100%;
+    }
+
     .right-side-right .right-right-container {
-        padding: 15px;
+        padding: 0px;
         padding-right: 0 !important;
         font-size: 14px;
     }
 
     .main-title .top-header {
         gap: 6px;
+        width: auto;
     }
 
     .main-title .top-header .notification {
@@ -629,7 +661,11 @@ hr {
         font-size: 14px !important;
     }
 
-    .main-title .right-side-left-header .title-project{
+    .main-title .right-side-left-header {
+        width: auto;
+    }
+
+    .main-title .right-side-left-header .title-project {
         font-size: 20px;
     }
 
@@ -638,9 +674,80 @@ hr {
     }
 
     .right-side .main-title {
-  padding: 15px 15px 5px;
+        padding: 15px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-bottom: 0px;
+    }
+
+    .commit-branch-tags-mib {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+    }
+
+    .right-right-container .all-doc {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .right-right-container .all-doc .doc-add {
+        text-wrap: nowrap;
+    }
+
+    .right-right-container .create-on span {
+        display: block;
+    }
+
+    .right-side-left {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .right-side-left .merge-details {
+        display: none;
+    }
+
 }
 
+
+@media only screen and (min-width: 951px) and (max-width: 1290px) {
+    .right-side header {
+        padding: 10px 15px;
+    }
+
+    .left-side {
+        display: none;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .right-side .main-title {
+        padding: 15px 15px 5px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .right-side-left-header {
+        /*width: auto;*/
+    }
+
+    .main-title .top-header {
+        gap: 2px;
+    }
+
+    .right-side .right-container {
+        padding: 10px 15px;
+    }
+
+    .right-side-right .right-right-container {
+        padding: 10px 20px;
+    }
 }
 
 
