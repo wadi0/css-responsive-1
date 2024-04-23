@@ -315,6 +315,21 @@ hr {
     background-color: white;
 }
 
+.plus-down-arrow {
+  font-size: 18px !important;
+}
+
+select {
+    background: none;
+    border: none;
+    padding: 0 4px;
+}
+
+/*.plus-select {*/
+/*    padding: 3px 0px !important;*/
+/*  font-size: 20px;*/
+/*}*/
+
 /*-------------table control css--------------*/
 
 .git-table {
@@ -657,7 +672,7 @@ hr {
     }
 
     .main-title .top-header .notification {
-        padding: 9px 6px !important;
+        padding: 7px 6px !important;
         font-size: 14px !important;
     }
 
@@ -747,6 +762,10 @@ hr {
 
     .right-side-right .right-right-container {
         padding: 10px 20px;
+    }
+
+    .plus-down-arrow {
+          font-size: 16px !important;
     }
 }
 

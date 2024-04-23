@@ -106,8 +106,13 @@
             </div>
             <div class="top-header">
                     <span class="notification border-background-span noti-arrow ">
-                        <i class="fa-regular fa-bell"></i>
-                        <i class="fa-solid fa-angle-down ms-2"></i>
+<!--                        <i class="fa-regular fa-bell"></i>-->
+<!--                        <i class="fa-solid fa-angle-down ms-2"></i>-->
+                        <select id="notification">
+                                <option value="">&#xF18A;</option>
+                                <option value="abc">abc</option>
+                            </select>
+
                     </span>
                 <span class="noti-arrow">
                         <span class="star border-background-span noti-arrow">
@@ -135,21 +140,45 @@
             <div class="right-side-left">
                 <div class="center-menu">
                     <div class="left-menu">
-                        <span class="border-background-span"><i class="fa-solid fa-code-branch me-1"></i> master <i
-                                class="fa-solid fa-angle-down ms-1 down-arrow"></i></span>
+
+                        <span class="border-background-span">
+                            <label for="master"><i class="fa-solid fa-code-branch"></i></label>
+                            <select id="master">
+                                <option value="">Master</option>
+                                <option value="dev">Dev</option>
+                            </select>
+                            <!--                            <i class="fa-solid fa-angle-down ms-1 down-arrow"></i>-->
+                        </span>
+
                         <span>
                                 medicare-next /
-                        <span class="border-background-span ms-2"><i class="fa-solid fa-plus me-3"></i><i
-                                class="fa-solid fa-angle-down"></i></span>
+                        <span class="border-background-span plus-down-arrow ms-2">
+<!--                            <label for="plus"><i class="fa-solid fa-plus"></i></label>-->
+                            <select id="plus">
+                                <option value="plus">&#xF4FE;</option>
+                                <option value="abc">abc</option>
+                            </select>
+                            <!--<i class="fa-solid fa-angle-down"></i></span>-->
                             </span>
                     </div>
                     <div class="right-menu">
                         <span class="border-background-span text-center">History</span>
                         <span class="border-background-span text-center">Find file</span>
-                        <span class="border-background-span edit"><span>Edit</span> <i
-                                class="fa-solid fa-angle-down ms-2"></i></span>
-                        <span class="border-background-span code">Code <i
-                                class="fa-solid fa-angle-down ms-2"></i></span>
+                        <span class="border-background-span edit">
+                            <select>
+                                <option value="">Edit</option>
+                                <option value="abc">abc</option>
+                            </select>
+<!--                            <span>Edit</span> -->
+<!--                            <i class="fa-solid fa-angle-down ms-2"></i>-->
+                        </span>
+                        <span class="border-background-span code">
+                            <select>
+                                <option value="">Code</option>
+                                <option value="abc">abc</option>
+                            </select>
+<!--                            Code <i class="fa-solid fa-angle-down ms-2"></i>-->
+                        </span>
                         <!--                        <div class="download-copy-ssh-container">-->
                         <div class="download-copy-ssh">
                             <div class="border-background-span">
