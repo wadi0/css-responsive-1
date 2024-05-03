@@ -1,40 +1,45 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 
-.main-container {
-    display: flex;
-    align-items: flex-start;
+.me {
+    margin-right: 0.5rem;
 }
 
 .left-side {
-    width: 20%;
-    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 16rem;
+    border: 1px solid gray;
     border-top: none;
     border-left: none;
     border-radius: 5px;
     background-color: whitesmoke;
+    position: fixed;
+    top: 0;
 }
 
 .right-side {
-    width: 80%;
+    margin: 0 auto;
 }
 
 .left-side .left-side-top {
-    padding: 15px !important;
-    background-color: midnightblue;
+    padding: 0.5rem;
+    background-color: #222261;
 }
 
 .left-side .left-side-top .logo-profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 0.5rem;
 }
 
 .left-side .left-side-top .logo-profile .gitlab-icon i {
-    font-size: 30px;
+    font-size: 25px;
     color: coral;
 }
 
@@ -46,11 +51,11 @@
 
 .left-side .left-side-top .logo-profile .profile-img i {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .left-side .left-side-top .logo-profile .profile-img img {
-    width: 35px;
+    width: 30px;
     border-radius: 50%;
 }
 
@@ -58,48 +63,55 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 0.5rem;
 }
 
 .left-side .left-side-top .top-middle .middle {
     color: white;
     border: 1px solid gray;
     background-color: #8080805c;
-    padding: 8px 20px;
     border-radius: 5px;
-    margin-bottom: 15px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
+    width: 31%;
+    text-align: center;
+    height: 30px;
+    align-content: center;
 }
 
 .left-side .left-side-top .top-bottom .bottom {
     color: white;
     border: 1px solid gray;
     background-color: #8080805c;
-    padding: 8px 20px;
     border-radius: 5px;
     font-size: 15px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
+    height: 30px;
+    align-content: center;
 }
 
 .left-side .left-side-bottom {
-    padding: 10px 5px;
+    padding: 8px 0px;
 }
 
 .left-side .left-side-bottom i {
     width: 20px;
+    color: gray;
+    text-align: -moz-center;
 }
 
 .left-side .left-side-bottom .project {
-    padding: 0 15px;
-    font-size: 15px;
+    padding: 0 10px;
+    font-size: 13px;
+    margin-bottom: 5px;
 }
 
 .left-side .left-side-bottom .project-name {
     display: flex;
     align-items: center;
-    padding: 5px 15px;
-    font-size: 16px;
+    padding: 5px 10px;
+    font-size: 15px;
 }
 
 .left-side .left-side-bottom .project-name i {
@@ -107,6 +119,12 @@
     padding: 5px;
     border-radius: 5px;
     width: auto;
+    margin-right: 0.5rem;
+}
+
+.left-side .left-side-bottom .project-name p {
+    margin: 0;
+    font-size: 14px;
 }
 
 /*.left-side .left-side-bottom .project-name:hover {*/
@@ -125,19 +143,19 @@
 /*    border-radius: 5px;*/
 /*    width: 5px;*/
 /*    height: 30px;*/
-/*    background-color: black;*/
+/*    background-color: gray;*/
 /*}*/
 
 .left-side .left-side-bottom .pinned {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 15px;
-    font-size: 15px;
+    padding: 8px 12px;
+    font-size: 14px;
 }
 
 .left-side .left-side-bottom .issues {
-    padding-left: 50px;
+    padding-left: 40px;
 }
 
 .left-side .left-side-bottom .issues .zero {
@@ -148,31 +166,33 @@
 }
 
 .left-side-hr {
-    padding: 10px 15px;
+    padding: 5px 15px;
 }
 
 hr {
     margin: 0px;
     padding: 0px;
+    color: whitesmoke;
 }
 
 .left-side-footer {
-    padding: 10px 20px;
+    padding: 10px 15px;
 }
 
 .left-side-footer div {
-    font-size: 16px;
+    font-size: 14px;
 }
 
-.right-side header {
+header {
     display: flex;
     align-items: center;
     gap: 6px;
     background-color: whitesmoke;
-    padding: 10px 30px;
+    padding: 15px 30px;
     border-bottom: 1px solid lightgray;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 13px;
+    padding-left: 18rem;
 }
 
 .right-side header i {
@@ -182,31 +202,39 @@ hr {
 }
 
 .right-side .right-container {
-    padding: 25px 35px;
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.right-side-left {
-    width: 75%;
+    /*display: flex;*/
+    margin: 0 auto;
+    /*gap: 40px;*/
+    padding-left: 18rem;
+    width: 1250px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: auto 257px;
+    gap: 40px;
 }
 
 .right-side .main-title {
-    padding: 30px 35px 5px;
-    display: flex;
+    display: grid;
     align-items: center;
+    justify-content: space-between;
+    width: 1250px;
+    margin: 15px auto;
+    padding-left: 18rem;
+    padding-right: 20px;
+    gap: 1rem;
+    grid-template-columns: auto 300px;
 }
 
 .right-side-left-header {
     display: flex;
     align-items: center;
-    width: 75%;
+    gap: 10px;
 }
 
 .title-project {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 25px;
 }
 
 .title-project i {
@@ -217,7 +245,7 @@ hr {
 }
 
 .right-side-left-header .lock {
-    margin-right: 1rem;
+    font-size: 14px;
 }
 
 .right-side-left-header .free {
@@ -229,108 +257,232 @@ hr {
     font-size: 12px;
 }
 
-.right-side-left .center-menu {
+/*---------------------select control-------------*/
+
+/*.select2 {*/
+/*    width: auto !important;*/
+/*}*/
+
+/*.select2-hidden-accessible {*/
+/*      -webkit-clip-path: unset !important;*/
+/*  clip-path: unset !important;*/
+/*      position: unset !important;*/
+/*    width: auto !important;*/
+/*    height: auto !important;*/
+/*}*/
+
+/*.select2-container .select2-selection--single {*/
+/*    height: 30px;*/
+/*}*/
+
+/*.select2-container .select2-selection--single .select2-selection__rendered {*/
+/*      padding-left: 12px;*/
+/*  padding-right: 24px;*/
+/*}*/
+/*-----------------  border: 1px solid #aaa;-----------------------*/
+
+.notification-box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.right-side-left .center-menu .left-menu {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    text-wrap: nowrap;
-}
-
-.right-side .border-background-span {
-    border: 1px solid lightgray;
-    padding: 2px 6px;
-    background-color: whitesmoke;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid gray;
+    padding: 0px 10px;
     border-radius: 5px;
+    font-size: 14px;
+    position: relative;
+    height: 28px;
+}
+
+.notification:hover .noti-dropdown {
+    display: block;
+}
+
+.noti-dropdown {
+    display: none;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    width: 200px;
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.star-box {
+    display: flex;
+    align-items: center;
+}
+
+.star-box .star {
+    border: 1px solid gray;
+    height: 28px;
+    align-content: center;
+    padding: 0px 10px;
+    border-radius: 5px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     font-size: 14px;
 }
 
-.right-side-left .center-menu .left-menu h6 {
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
+.star-box .star i {
+    margin-right: 5px;
 }
 
-.right-side-left .center-menu .right-menu {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    text-wrap: nowrap;
+.star-box .zero {
+    border: 1px solid gray;
+    height: 28px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    align-content: center;
+    font-size: 14px;
 }
 
-.right-side-left .merge-details {
-    padding: 10px;
+.top-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    gap: 5px;
+    /*width: 300px;*/
+}
+
+.three-dot i {
+    padding: 0 10px;
+}
+
+.right-side-left .center-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-.right-side-left .merge-details img {
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 1rem;
+.center-menu .left-menu {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
-.right-side-left .merge-details .branch-author {
+.branch {
+    border: 1px solid gray;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+    height: 26px;
+}
+
+.plus-down-arrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.plus-down-arrow span {
+    border: 1px solid gray;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    height: 26px;
+}
+
+.center-menu .right-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /*height: 26px;*/
+}
+
+.center-menu .right-menu .history {
+    border: 1px solid gray;
+    height: 26px;
+    align-content: center;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.right-container .right-side-left {
+    /*width: 950px;*/
+}
+
+.right-container .merge-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.merge-details {
+    border: 1px solid gray;
+    padding: 0 20px;
+    height: 80px;
+    align-content: center;
+    border-radius: 5px;
+}
+
+.merge-details .branch-author {
     display: flex;
     align-items: center;
 }
 
-.right-side-left .merge-details .branch-author span {
+.merge-details img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.initial-commit {
     display: flex;
     flex-direction: column;
-    font-size: 13px;
 }
 
-.right-side-left .merge-details .merge-id {
+.merge-details .merge-id {
     display: flex;
     align-items: center;
+
 }
 
-.right-side-left .merge-details .merge-id span {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
+.merge-details .merge-id .code {
+    border: 1px solid gray;
+    height: 26px;
+    align-content: center;
+    padding: 0 10px;
+    border-radius: 5px;;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
 }
 
-.right-side-left .merge-details .merge-id .clone {
-    border-bottom-left-radius: 0px;
+.merge-details .merge-id i {
+    border: 1px solid gray;
+    height: 26px;
+    align-content: center;
+    padding: 0 10px;
+    border-radius: 5px;;
     border-top-left-radius: 0px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    border-left: none;
+    border-bottom-left-radius: 0px;
+    border-left: 0px;
 }
 
 .right-side-left .project-data {
     padding: 0;
     background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-.plus-down-arrow {
-  font-size: 18px !important;
-}
-
-select {
-    background: none;
-    border: none;
-    padding: 0 4px;
-}
-
-/*.plus-select {*/
-/*    padding: 3px 0px !important;*/
-/*  font-size: 20px;*/
-/*}*/
-
-/*-------------table control css--------------*/
+/*!*-------------table control css--------------*!*/
 
 .git-table {
     width: 100%;
@@ -338,56 +490,48 @@ select {
     table-layout: fixed;
     overflow: unset;
     /*border: 1px solid lightgrey;*/
+    border-collapse: collapse;
+}
+
+thead {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
 }
 
 .git-table .last-update {
     text-align: end;
 }
 
+tr {
+    border-bottom: 1px solid grey;
+}
+
+.last-tr {
+    border-bottom: 0px !important;
+}
+
 .git-table th, .git-table td {
-    padding: 10px 20px !important;
-    border-bottom: 2px solid lightgray;
+    padding: 0px 20px !important;
+    /*border-bottom: 2px solid lightgray;*/
+    text-align: start;
+    height: 40px;
+}
+
+td {
+    font-size: 15px;
 }
 
 .git-table tr .border-bottom-none {
     border-bottom: none;
 }
 
-/*---------------------table control css end----------- */
+/*!*---------------------table control css end----------- *!*/
 
-.right-side-right {
-    width: 25%;
-}
 
-.main-title .top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 6px;
-    flex-wrap: wrap;
-    width: 25%;
-}
-
-.main-title .top-header .star {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    text-wrap: nowrap;
-}
-
-.main-title .top-header .zero {
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
-    border-left: none;
-}
-
-.right-side-right .right-right-container {
-    padding: 40px;
-    padding-right: 0;
-}
-
-.right-side-right .right-right-container h5 {
-    margin-bottom: 10px;
-    font-size: 14px
+.right-right-container .project-info {
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .right-right-container .line-colored {
@@ -395,205 +539,164 @@ select {
     height: 6px;
     border-radius: 5px;
     background-color: #a814a8;
-    border: none
+    border: none;
+    margin-top: 10px
 }
 
-.noti-arrow {
+.right-right-container .right-side-hr {
+    margin: 15px 0;
+}
+
+.right-right-container .commit-branch-tags-mib {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.notification {
-    padding: 5px 8px !important;
+.commit-branch-tags-mib .all-info i {
+    font-size: 14px;
 }
 
-.main-title .more-actions-select {
-    display: none;
-    width: 100%;
-
+.commit-branch-tags-mib .all-info b {
+    font-size: 14px;
+    font-weight: 500;
 }
 
-.main-title .more-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.all-info {
-    /*margin-bottom: 1rem;*/
-}
-
-.all-info i {
-    margin-bottom: 1rem;
+.right-side-right {
+    width: auto;
 }
 
 .right-right-container .all-doc {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    color: #2e2ebfa3;
+}
+
+.right-right-container .all-doc .doc-add {
     font-size: 14px;
-    margin-bottom: 15px;
+}
+
+.right-right-container .all-doc .doc-add span {
+    font-size: 15px;
+}
+
+.right-right-container .create-on {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.right-right-container .create-on b {
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .right-right-container .create-on span {
-    display: none;
     font-size: 14px;
+    font-weight: 400;
+}
+
+.more-actions-select select {
+    display: none;
 }
 
 .download-copy-ssh {
     display: none;
 }
 
-.last-commit {
 
-}
+@media only screen and (min-width: 400px) and (max-width: 649px) {
 
-.commit-branch-tags-mib {
-    font-size: 13px;
-}
-
-.right-right-container hr {
-    margin-top: 0;
-}
-
-
-/* Media query for small screens */
-@media only screen and (max-width: 470px) {
     .left-side {
         display: none;
     }
 
-    .right-side {
-        width: 100%;
+    header {
+        padding-left: 15px;
     }
 
     .right-side .main-title {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 15px 5px;
-        gap: 15px;
-    }
-
-    .right-side .main-title .right-side-left-header {
-        width: 100%;
-        font-size: 12px;
-    }
-
-    .right-side .main-title .right-side-left-header h1 {
-        font-size: 16px;
-        text-wrap: nowrap;
-    }
-
-    .right-side header {
-        font-size: 14px;
-        padding: 10px 15px;
-    }
-
-    .main-title .top-header .star {
-    }
-
-    .main-title .top-header .three-dot {
-        display: none;
-    }
-
-    .main-title .more-actions-select {
-        display: block;
-    }
-
-    .right-side .right-container {
-        flex-direction: column-reverse;
-        padding: 5px 15px;
-    }
-
-    .right-side-right {
-        width: 100%;
-    }
-
-    .right-side-right .right-right-container {
-        padding: 0;
-    }
-
-    .commit-branch-tags-mib {
+        width: auto;
+        padding: 0 15px;
         display: flex;
+
+        flex-direction: column !important;
+        align-items: baseline !important;
+    }
+
+    .right-container {
+        padding: 0 15px !important;
+        width: auto !important;
+        display: flex !important;
+        flex-direction: column-reverse;
+        gap: 25px !important;
+    }
+
+    .right-right-container .commit-branch-tags-mib {
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: 10px;
-        margin-bottom: 15px;
     }
 
-    .all-info {
-        text-wrap: nowrap;
-        margin-right: 9px;
-        margin-bottom: 0;
-        font-size: 12px;
+    .more-actions-select {
+        width: 100%;
     }
 
-    .all-info i {
-        margin-right: 5px !important;
-        margin-bottom: 0;
+    .more-actions-select select {
+        display: block;
+        width: 100%;
+        height: 28px;
+        padding: 0 10px;
+        background-color: white;
+        border: 1px solid gray;
+        border-radius: 5px;
     }
 
     .right-right-container .all-doc {
-        flex-wrap: wrap;
-        gap: 5px;
         flex-direction: row;
-        font-size: 12px;
-    }
-
-    .right-right-container .create-on {
-        margin-bottom: 10px;
-        font-size: 13px;
-    }
-
-    .right-right-container .create-on span {
-        display: block;
-        font-size: 12px;
-    }
-
-    .right-side-left {
-        width: 100%;
-    }
-
-    .right-side-left .center-menu {
-        flex-direction: column;
-    }
-
-    .right-side-left .center-menu .left-menu h6 {
-        font-size: 15px;
-    }
-
-    .right-side-left .center-menu .left-menu span i {
-        /*margin-right: 10px !important;*/
-        font-size: 13px;
-    }
-
-    .right-side-left .center-menu .left-menu {
-        width: 100%;
-        justify-content: space-between;
-        margin-bottom: 15px;
         flex-wrap: wrap;
-        font-size: 13px;
     }
 
-    .right-side-left .center-menu .right-menu {
+    .center-menu {
         flex-direction: column;
+        align-items: baseline;
+        gap: 5px;
+    }
+
+    .center-menu .left-menu {
+        justify-content: space-between;
         width: 100%;
     }
 
-    .right-side-left .center-menu .right-menu span {
+    .center-menu .right-menu {
         width: 100%;
-        /*text-align: center;*/
+        flex-direction: column;
     }
 
-    .right-side-left .center-menu .right-menu .code {
-        display: none;
+    .center-menu .right-menu .history {
+        width: 100%;
+        padding: 0px;
     }
 
-    .right-side-left .center-menu .right-menu .edit {
+    .center-menu .right-menu .history-find {
+        text-align: center !important;
+    }
+
+    .center-menu .right-menu .edit {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
-    .right-side-left .merge-details {
+    .center-menu .right-menu .edit span {
+        padding-left: 10px;
+    }
+
+    .center-menu .right-menu .edit i {
+        padding-right: 10px;
+    }
+
+    .center-menu .right-menu .code {
         display: none;
     }
 
@@ -605,103 +708,83 @@ select {
         text-wrap: nowrap;
     }
 
-    .last-commit {
-        display: none;
+    .download {
+        width: 60px !important;
+        text-align: center;
     }
 
-    .right-side header i {
-        display: block;
+    .copy-ssh-arrow {
+        width: 100%;
+        align-content: center;
+        display: grid;
+        grid-template-columns: auto 35px;
+        align-items: center;
     }
 
-    .border-background-span {
-        padding: 6px !important;
-        font-size: 13px !important;
+    .copy-ssh-arrow span {
+        border: 1px solid gray;
+        height: 28px;
+        align-content: center;
+        padding: 0;
+        text-align: center;
+        border-radius: 5px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
-    .main-title .top-header {
-        flex-wrap: nowrap;
+    .copy-ssh-arrow i {
+        border: 1px solid gray;
+        height: 28px;
+        align-content: center;
+        padding: 0;
+        text-align: center;
+        border-radius: 5px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: 0;
     }
 
-    .main-title .top-header .notification {
-        padding: 9px 6px !important;
-        font-size: 14px !important;
+    .merge-details {
+        display: none !important;
     }
 
-    .git-table th, .git-table td {
-        padding: 10px 10px !important;
+    /*.git-table .last-update {*/
+    /*    display: none !important;*/
+    /*}*/
+    td {
+        text-wrap: nowrap;
     }
+
+
 }
 
-@media only screen and (min-width: 471px) and (max-width: 950px) {
+
+@media only screen and (min-width: 650px) and (max-width: 991px) {
+
     .left-side {
         display: none;
     }
 
-    .right-side {
-        width: 100%;
-    }
-
-    .right-side .right-container {
-        padding: 15px;
-    !important;
-        flex-direction: column-reverse;
-    }
-
-    .border-background-span {
-        padding: 6px !important;
-        font-size: 13px !important;
-    }
-
-    .right-side header i {
-        display: block;
-    }
-
-    .right-side-right {
-        width: 100%;
-    }
-
-    .right-side-right .right-right-container {
-        padding: 0px;
-        padding-right: 0 !important;
-        font-size: 14px;
-    }
-
-    .main-title .top-header {
-        gap: 6px;
-        width: auto;
-    }
-
-    .main-title .top-header .notification {
-        padding: 7px 6px !important;
-        font-size: 14px !important;
-    }
-
-    .main-title .right-side-left-header {
-        width: auto;
-    }
-
-    .main-title .right-side-left-header .title-project {
-        font-size: 20px;
-    }
-
-    .merge-details .merge-id i {
-        font-size: 19px !important;
+    header {
+        padding-left: 15px;
     }
 
     .right-side .main-title {
-        padding: 15px;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding-bottom: 0px;
+        width: auto;
+        padding: 0 15px;
     }
 
-    .commit-branch-tags-mib {
-        display: flex;
-        align-items: center;
-        gap: 25px;
+    .right-container {
+        padding: 0 15px !important;
+        width: auto !important;
+        display: flex !important;
+        flex-direction: column-reverse;
+        gap: 25px !important;
+    }
+
+    .right-right-container .commit-branch-tags-mib {
+        flex-direction: row;
         flex-wrap: wrap;
-        margin-bottom: 5px;
     }
 
     .right-right-container .all-doc {
@@ -709,64 +792,61 @@ select {
         flex-wrap: wrap;
     }
 
-    .right-right-container .all-doc .doc-add {
-        text-wrap: nowrap;
-    }
-
-    .right-right-container .create-on span {
-        display: block;
-    }
-
-    .right-side-left {
-        width: 100%;
-        margin-top: 15px;
-    }
-
-    .right-side-left .merge-details {
-        display: none;
-    }
+    /*.right-side .main-title {*/
+    /*    flex-wrap: wrap;*/
+    /*}*/
 
 }
 
 
-@media only screen and (min-width: 951px) and (max-width: 1290px) {
-    .right-side header {
-        padding: 10px 15px;
-    }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
 
     .left-side {
         display: none;
     }
 
-    .right-side {
-        width: 100%;
+    header {
+        padding-left: 15px;
     }
 
     .right-side .main-title {
-        padding: 15px 15px 5px;
-        justify-content: space-between;
-        align-items: center;
+        width: auto;
+        padding: 0 15px;
     }
 
-    .right-side-left-header {
-        /*width: auto;*/
+    .right-container {
+        padding: 0 15px !important;
+        width: auto !important;
     }
 
-    .main-title .top-header {
-        gap: 2px;
-    }
-
-    .right-side .right-container {
-        padding: 10px 15px;
-    }
-
-    .right-side-right .right-right-container {
-        padding: 10px 20px;
-    }
-
-    .plus-down-arrow {
-          font-size: 16px !important;
-    }
 }
 
 
+@media only screen and (min-width: 1200px) and (max-width: 1550px) {
+
+    .right-side .main-title {
+        width: auto;
+    }
+
+    .right-side .right-container {
+        /*display: grid;*/
+        /*grid-template-columns: auto 257px;*/
+        /*gap: 40px;*/
+        width: auto;
+        text-wrap: nowrap;
+    }
+
+    .right-container .right-side-left {
+        width: fit-content;
+    }
+
+    .center-menu .left-menu {
+        gap: 8px;
+    }
+
+    .center-menu .right-menu {
+        gap: 8px;
+    }
+
+
+}
