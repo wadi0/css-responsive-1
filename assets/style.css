@@ -606,7 +606,7 @@ td {
 }
 
 
-@media only screen and (min-width: 400px) and (max-width: 649px) {
+@media only screen and (min-width: 375px) and (max-width: 649px) {
 
     .left-side {
         display: none;
@@ -751,7 +751,7 @@ td {
     /*.git-table .last-update {*/
     /*    display: none !important;*/
     /*}*/
-    td {
+    td, th {
         text-wrap: nowrap;
     }
 
