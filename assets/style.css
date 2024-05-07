@@ -197,7 +197,7 @@ header {
 
 .right-side header i {
     margin-right: 8px;
-    /*font-size: 16px;*/
+    font-size: 15px;
     display: none;
 }
 
@@ -294,19 +294,20 @@ header {
     height: 28px;
 }
 
-.notification:hover .noti-dropdown {
-    display: block;
+.notification-show {
+    display: block !important;
 }
 
 .noti-dropdown {
     display: none;
     background-color: whitesmoke;
     padding: 10px 20px;
-    width: 200px;
+    /*width: 200px;*/
     position: absolute;
     border: 1px solid gray;
     border-radius: 5px;
     margin-top: 5px;
+    z-index: 1;
 }
 
 .star-box {
@@ -384,7 +385,12 @@ header {
     gap: 10px;
 }
 
-.plus-down-arrow span {
+.plus-down-arrow .file-directory {
+
+}
+
+.plus-down {
+    position: relative;
     border: 1px solid gray;
     font-size: 14px;
     border-radius: 5px;
@@ -395,6 +401,24 @@ header {
     width: fit-content;
     height: 26px;
 }
+
+.directory {
+    display: none;
+    background-color: whitesmoke;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.directory-show {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 150px;
+}
+
+
 
 .center-menu .right-menu {
     display: flex;
@@ -409,6 +433,26 @@ header {
     align-content: center;
     padding: 0 10px;
     border-radius: 5px;
+}
+
+.edit {
+    position: relative;
+}
+
+.edit-box {
+    display: none;
+    background-color: whitesmoke;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.edit-box-show {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    margin-top: 10px;
 }
 
 .right-container .right-side-left {
@@ -597,14 +641,127 @@ td {
     font-weight: 400;
 }
 
-.more-actions-select select {
+.more-actions-select{
     display: none;
+}
+
+.more-actions {
+    border: 1px solid gray;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 .download-copy-ssh {
     display: none;
 }
 
+.noti-dropdown h4 {
+    margin: 0;
+    font-size: 16px;
+  font-weight: 400;
+}
+
+
+.noti-dropdown p {
+    margin: 0;
+    width: 150px;
+  font-size: 15px;
+  color: gray;
+}
+
+.project-id-setting {
+    display: none;
+    background-color: whitesmoke;
+  padding: 10px 20px;
+  position: absolute;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.project-id-setting-show {
+    display: flex;
+        flex-direction: column;
+    gap: 10px;
+}
+
+.branch span {
+    position: relative;
+}
+
+.branch-list {
+    display: none;
+    background-color: whitesmoke;
+  padding: 10px 20px;
+  position: absolute;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.branch-list-show {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.download-box {
+    position: relative;
+}
+
+.download-type {
+    display: none;
+    background-color: whitesmoke;
+  padding: 10px 20px;
+  position: absolute;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.download-type-show {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+
+    .clone-url {
+        display: none;
+        background-color: whitesmoke;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 5px !important;
+  margin-top: 10px;
+    }
+
+    .clone-url-show {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: 15px;
+    }
+
+    .clone-with {
+        display: none;
+        background-color: whitesmoke;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 10px;
+    }
+
+    .clone-with-show {
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
 
 @media only screen and (min-width: 375px) and (max-width: 649px) {
 
@@ -640,16 +797,18 @@ td {
 
     .more-actions-select {
         width: 100%;
+        position: relative
     }
 
-    .more-actions-select select {
-        display: block;
-        width: 100%;
-        height: 28px;
-        padding: 0 10px;
-        background-color: white;
-        border: 1px solid gray;
-        border-radius: 5px;
+    .more-actions-select {
+        /*display: block;*/
+        /*width: 100%;*/
+        /*height: 28px;*/
+        /*padding: 0 10px;*/
+        /*background-color: white;*/
+        /*border: 1px solid gray;*/
+        /*border-radius: 5px;*/
+        /*position: relative;*/
     }
 
     .right-right-container .all-doc {
@@ -660,7 +819,7 @@ td {
     .center-menu {
         flex-direction: column;
         align-items: baseline;
-        gap: 5px;
+        gap: 10px;
     }
 
     .center-menu .left-menu {
@@ -674,8 +833,9 @@ td {
     }
 
     .center-menu .right-menu .history {
-        width: 100%;
+            width: -moz-available;
         padding: 0px;
+        height: 28px;
     }
 
     .center-menu .right-menu .history-find {
@@ -703,7 +863,7 @@ td {
     .download-copy-ssh {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: -moz-available;
         gap: 10px;
         text-wrap: nowrap;
     }
@@ -732,7 +892,7 @@ td {
         border-bottom-right-radius: 0;
     }
 
-    .copy-ssh-arrow i {
+    .copy-ssh-arrow .clone {
         border: 1px solid gray;
         height: 28px;
         align-content: center;
@@ -755,6 +915,27 @@ td {
         text-wrap: nowrap;
     }
 
+    header i {
+        display: block !important;
+    }
+
+    .left-side-show {
+            display: block !important; /* Show the left-side */
+        z-index: 1;
+        }
+
+    .left-side-bottom {
+        height: 330px;
+  overflow: scroll;
+    }
+
+    .more-actions-select {
+        display: block !important;
+    }
+
+    .directory-show {
+        right: 15px;
+    }
 
 }
 
@@ -792,9 +973,10 @@ td {
         flex-wrap: wrap;
     }
 
-    /*.right-side .main-title {*/
-    /*    flex-wrap: wrap;*/
-    /*}*/
+    .clone-with {
+        right: 15px;
+  width: 150px;
+    }
 
 }
 
@@ -817,6 +999,10 @@ td {
     .right-container {
         padding: 0 15px !important;
         width: auto !important;
+    }
+
+    .clone-with {
+          right: 312px;
     }
 
 }

@@ -28,7 +28,7 @@
 </head>
 <body>
 <div class="main-container">
-    <div class="left-side">
+    <div class="left-side" id="leftSide">
         <div class="left-side-top">
             <div class="logo-profile">
                 <div class="gitlab-icon"><i class="fa-brands fa-gitlab"></i></div>
@@ -44,7 +44,7 @@
                 <span class="middle"><i class="fa-solid fa-check-to-slot me-2"></i>99+</span>
             </div>
             <div class="top-bottom">
-                <div class="bottom"><i class="fa-solid fa-magnifying-glass me-2"></i>Search or go to...</div>
+                <div class="bottom"><i class="fa-solid fa-magnifying-glass me"></i>Search or go to...</div>
             </div>
         </div>
 
@@ -113,8 +113,8 @@
         </div>
     </div>
     <div class="right-side">
-            <header>
-            <i class="fa-solid fa-table-columns"></i>
+        <header>
+            <i class="fa-solid fa-table-columns" id="headerIcon" onclick="splitIcon()"></i>
             <span>Shadhin Dev / gen-ai / medicare-next</span>
         </header>
 
@@ -125,13 +125,14 @@
                 <span class="free">Free</span>
             </div>
             <div class="top-header">
-                <span class="notification">
+                <span class="notification" onclick="notificationClick()">
                 <span class="notification-box">
                     <i class="fa-regular fa-bell"></i>
                     <i class="fa-solid fa-angle-down"></i>
                 </span>
-                    <span class="noti-dropdown">
-                        <p>jkjkkj</p>
+                    <span class="noti-dropdown" id="noti-dropdown">
+                        <h4>Global</h4>
+                        <p>Use your global notification setting</p>
                     </span>
                 </span>
                 <span class="star-box">
@@ -148,14 +149,16 @@
                     </span>
                 <span class="three-dot"><i class="fa-solid fa-ellipsis-vertical"></i></span>
             </div>
-            <div class="more-actions-select ">
-<!--                <div class="more-actions">-->
-<!--                    <span>More actions</span>-->
-<!--                    <i class="fa-solid fa-angle-down ms-2"></i>-->
-<!--                </div>-->
-                <select>
-                    <option value="">More Action</option>
-                </select>
+            <div class="more-actions-select" onclick="moreActions()">
+                                <div class="more-actions">
+                                    <span>More actions</span>
+                                    <i class="fa-solid fa-angle-down ms-2"></i>
+                                </div>
+
+                <div class="project-id-setting" id="project-id-setting">
+                    <span>Copy project ID: 57336220</span>
+                    <span>Project settings</span>
+                </div>
             </div>
         </div>
 
@@ -165,39 +168,69 @@
                 <div class="center-menu">
                     <div class="left-menu">
 
-                        <span class="branch">
-                            <i class="fa-solid fa-code-branch"></i>
-                            <span>main</span>
-                            <i class="fa-solid fa-angle-down ms-1 down-arrow"></i>
+                        <span class="branch-box" onclick="branchList()">
+                            <span class="branch">
+                                <i class="fa-solid fa-code-branch"></i>
+                                <span>main</span>
+                                <i class="fa-solid fa-angle-down ms-1 down-arrow"></i>
+                            </span>
+                            <div class="branch-list" id="branch-list">
+                                <p> Select Git revision</p>
+                            </div>
                         </span>
 
                         <span class="plus-down-arrow">
                                 medicare-next /
-                        <span class="">
-                            <i class="fa-solid fa-plus"></i>
-
-                            <i class="fa-solid fa-angle-down"></i></span>
+                            <span class="file-directory"  onclick="directory()">
+                                <span class="plus-down">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                                <div class="directory" id="directory">
+                                    <span>This directory</span>
+                                </div>
                             </span>
+                        </span>
                     </div>
                     <div class="right-menu">
                         <span class="history history-find">History</span>
                         <span class="history history-find">Find file</span>
-                        <span class="history edit">
-                            <span>Edit</span>
-                            <i class="fa-solid fa-angle-down"></i>
+                        <span class="history">
+                            <span class="edit" onclick="editBtn()">
+                                <span>Edit</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                            <span class="edit-box" id="edit-box">
+                                Web IDE
+                            </span>
                         </span>
                         <span class="history code">
-                            <span>Code</span>
-                            <i class="fa-solid fa-angle-down"></i>
+                            <span class="code-ssh-http" onclick="code()">
+                                <span>Code</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                            <span class="clone-with" id="clone-with">
+                                Clone with SSH
+                            </span>
                         </span>
                         <div class="download-copy-ssh">
-                            <div class="history download" >
-                                <i class="fa-solid fa-download"></i>
-                                <i class="fa-solid fa-angle-down"></i>
+                            <div class="history download">
+                                <span class="download-box" onclick="download()">
+                                    <i class="fa-solid fa-download"></i>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                                <span class="download-type" id="download-type">
+                                    Download source code
+                                </span>
                             </div>
                             <div class="copy-ssh-arrow">
                                 <span>Copy SSH clone URL</span>
-                                <i class="fa-solid fa-angle-down ms-2"></i>
+                                <span class="clone" onclick="cloneUrl()">
+                                    <i class="fa-solid fa-angle-down ms-2"></i>
+                                    <div class="clone-url" id="clone-url">
+                                        Copy SSH clone URL
+                                    </div>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -283,7 +316,7 @@
                 <div class="right-right-container">
                     <h5 class="project-info">Project information</h5>
                     <div class="line-colored "></div>
-                    <hr class="right-side-hr" />
+                    <hr class="right-side-hr"/>
                     <div class="commit-branch-tags-mib">
                         <div class=" all-info"><i class="fa-solid fa-code-commit me"></i><b>437 Commits</b></div>
                         <div class="all-info"><i class="fa-solid fa-code-branch me"></i><b>8 Branches</b></div>
@@ -299,10 +332,12 @@
                         <div class="doc-add"><i class="fa-solid fa-plus me"></i><span>Add CHANGELOG</span></div>
                         <div class="doc-add"><i class="fa-solid fa-plus me"></i><span>Add CONTRIBUTING</span></div>
                         <div class="doc-add"><i class="fa-solid fa-plus me"></i><span>Enable Auto DevOps</span></div>
-                        <div class="doc-add"><i class="fa-solid fa-plus me"></i><span>Add Kubernetes cluster</span></div>
+                        <div class="doc-add"><i class="fa-solid fa-plus me"></i><span>Add Kubernetes cluster</span>
+                        </div>
                         <div class="doc-add"><i class="fa-solid fa-plus me"></i><span>Set up CI/CD</span></div>
                         <div class="doc-add"><i class="fa-solid fa-plus me"></i><span>Add Wiki</span></div>
-                        <div class="doc-add"><i class="fa-solid fa-plus me"></i><span>Configure Integrations</span></div>
+                        <div class="doc-add"><i class="fa-solid fa-plus me"></i><span>Configure Integrations</span>
+                        </div>
                     </div>
                     <hr class="right-side-hr"/>
                     <div class="create-on">
@@ -331,5 +366,7 @@
 <!--        templateResult: formatText-->
 <!--    });-->
 <!--</script>-->
+
+<script src="javaScript.js"></script>
 </body>
 </html>
