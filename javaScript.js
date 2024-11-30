@@ -192,3 +192,5 @@ const code = () => {
         cloneWith.classList.add("clone-with-show");
     }
 }
+
+console.log('kjkk')
